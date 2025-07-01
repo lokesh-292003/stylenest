@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StyleNest | Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class = header>
+    <nav class="navbar">
+      <a href="index.html"><img src="Logo.png" alt="StyleNest Logo" class="logo" /></a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Men</a></li>
+        <li><a href="womens.html">Women</a></li>
+        <li>
+          <a href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-main">
+  <section class="cart-wrapper">
+    <h2 class="cart-title">Your Cart</h2>
+    <div id="cart-items" class="cart-items-box">
+      <p class="empty-msg">Your cart is empty.</p>
+    </div>
+
+    <button id="order-btn" class="order-btn">Order Now</button>
+
+    <div id="order-message" class="order-message">
+      <p>✅ Order placed successfully!</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Tick" width="80" />
+    </div>
+
+    <div id="err-message" class="error-message">
+      <p>❌ No products in cart</p>
+    </div>
+  </section>
+</main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
